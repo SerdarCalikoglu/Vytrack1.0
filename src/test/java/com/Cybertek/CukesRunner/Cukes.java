@@ -10,12 +10,10 @@ import org.junit.runner.RunWith;
 
         (
 
-
             features = "src/test/resources",
                 glue="com/Cybertek/StepDeffinitions",
-                dryRun = true,
+                dryRun = false,
                 tags = "@wip"
-
         )
 
 
