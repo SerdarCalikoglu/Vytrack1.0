@@ -40,7 +40,7 @@ Feature: log in
 
 
 
-  @wip
+
 Scenario Outline:
   Given User is on log in page
   When User log in with "<user>" as a username
