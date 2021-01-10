@@ -19,6 +19,11 @@ public class LoginPage extends BasePage{
     public WebElement errorMessage;
 
 
+    @FindBy(xpath = "//li[@id='user-menu']/a")
+    public WebElement dashboardUsername;
+
+
+
     public void loginWithUsernameAndPassword(String username1,String password1){
       username.sendKeys(username1);
       password.sendKeys(password1);
