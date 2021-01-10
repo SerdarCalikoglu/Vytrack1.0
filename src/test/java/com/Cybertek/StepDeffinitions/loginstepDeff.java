@@ -1,6 +1,7 @@
 package com.Cybertek.StepDeffinitions;
 
 import com.Cybertek.Pages.DashBoard;
+import com.Cybertek.Pages.Dashboard;
 import com.Cybertek.Pages.LoginPage;
 import com.Cybertek.utilities.BrowserUtils;
 import com.Cybertek.utilities.ConfigurationReader;
@@ -57,7 +58,7 @@ LoginPage loginPage=new LoginPage();
     public void user_should_see_the_following_list(List<String> expectedmenuopitons) {
 
         BrowserUtils.waitFor(5);
-        DashBoard dashBoard= new DashBoard();
+        Dashboard dashBoard= new Dashboard();
         List<String> actualOptions = BrowserUtils.getElementsText(dashBoard.menuOptions);
         Assert.assertEquals(expectedmenuopitons,actualOptions);
         System.out.println(expectedmenuopitons);
