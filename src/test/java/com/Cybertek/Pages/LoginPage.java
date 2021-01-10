@@ -18,4 +18,8 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//div[.='Invalid user name or password.']")
     public WebElement errorMessage;
 
+    @FindBy(xpath = "//li[@id='user-menu']/a")
+    public WebElement dashboardUsername;
+
+
 }
