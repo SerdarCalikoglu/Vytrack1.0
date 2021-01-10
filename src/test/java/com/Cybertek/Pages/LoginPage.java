@@ -18,4 +18,11 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//div[.='Invalid user name or password.']")
     public WebElement errorMessage;
 
+
+    public void loginWithUsernameAndPassword(String username1,String password1){
+      username.sendKeys(username1);
+      password.sendKeys(password1);
+      login_button.click();
+    }
+
 }
